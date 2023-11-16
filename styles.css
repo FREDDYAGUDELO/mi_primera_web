@@ -1,0 +1,479 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(245, 252, 188);
+  justify-content: center;
+  align-items: center;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: inline-flex;
+  padding-right: 20em;
+  gap: 1.1em;
+}
+
+nav ul li a {
+  color: whitesmoke;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  header {
+    background-color: burlywood;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .checkbtn {
+    margin-right: 40px;
+    line-height: 80px;
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    color: white;
+    float: right;
+  }
+
+  #encabezado ul {
+    transition: all 0.5s;
+    background: brown;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 100%;
+    top: 80px;
+  }
+
+  #check:checked~ul {
+    display: block;
+    left: 0;
+  }
+
+  #encabezado nav ul li {
+    line-height: 30px;
+    margin: 50px 0;
+    display: block;
+  }
+
+  #encabezado nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked~.checkbtn {
+    color: chartreuse;
+  }
+
+  .tarjetas {
+    flex-direction: column; /* Cambia de fila a columna en pantallas pequeñas */
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .form-row {
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    width: 250px;
+    height: initial;
+  }
+
+  .form-row label {
+    width: 120px;
+    margin-top: 7px;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .form-row button {
+    margin-left: 120px;
+  }
+
+  .form-row textarea {
+    width: 250px;
+  }
+}
+
+/* Resto de estilos */
+header {
+  background-color: rgb(87, 42, 42);
+  justify-content: space-between;
+  box-shadow: 20px 20px 50px;
+  font-family: Creepster;
+  align-items: center;
+  border-radius: 40%;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  width: 100%;
+}
+
+.logo img {
+  text-align: center;
+  border-radius: 40%;
+  margin-left: 100px;
+  margin-top: 10px;
+  transition: 2s;
+  display: flex;
+  float: left;
+}
+
+h2 {
+  color: rgb(79, 42, 165);
+  font-weight: bolder;
+  margin-top: 3em;
+  display: flex;
+}
+
+h2,
+.parrafo1 {
+  font-family: 'Shadows Into Light', cursive;
+  text-align: justify;
+  padding-left: 3em;
+  font-size: 1.2cm;
+  display: flex;
+}
+
+.parrafo2 {
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 0.05em;
+  color: rgb(7, 0, 0);
+  text-align: justify;
+  padding-right: 5em;
+  padding-left: 5em;
+  font-weight: 600;
+  font-size: 1.2em;
+  display: flex;
+  margin: 30px;
+}
+
+.foto-perfil {
+  box-shadow: 20px 20px 50px;
+  border-radius: 1em;
+  margin-right: 100px;
+  display: flex;
+  height: 300px;
+  width: 300px;
+}
+
+.acerca-imagen {
+  margin-right: 10em;
+  margin-top: 10em;
+  display: flex;
+  height: auto;
+  margin: 5%;
+}
+
+.goku {
+  box-shadow: 20px 20px 50px;
+  border-radius: 5em;
+  margin-right: 10px;
+  float: initial;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.acerca-de {
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 3em;
+  display: flex;
+}
+
+footer {
+  background-color: rgb(46, 87, 42);
+  box-shadow: 20px 20px 50px;
+  border-radius: 48%;
+  width: 100%;
+}
+
+footer img {
+  border-radius: 40%;
+  position: fixed;
+  padding: 10px;
+  float: right;
+  height: 50px;
+  width: 50px;
+  bottom: 0;
+  right: 0;
+}
+
+.seccion-1 {
+  justify-content: center;
+  padding-top: 2em;
+  display: flex;
+}
+
+.seccion-2 {
+  justify-content: center;
+  margin-bottom: 2em;
+  display: flex;
+}
+
+.encabezado {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Instagram: rgb(197, 68, 7);
+  --Linkedin: #8397c2;
+  --Facebook: #3b5999;
+  --WhatsApp: #228809;
+  --Twitter: #133d97;
+}
+
+h3 {
+  font-family: Creepster;
+}
+
+.Redes-container {
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  height: 7vh;
+}
+
+.Redes-container nav ul li {
+  text-align: center;
+  display: block;
+  margin: 0 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.Redes-container nav ul li a {
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+  background: maroon;
+  border-radius: 100px;
+  line-height: 50px;
+  padding: 0 10px;
+  font-size: 25px;
+  transition: .2s;
+  color: white;
+  display: block;
+}
+
+.Redes-container ul:hover a {
+  filter: blur(2px);
+}
+
+.Redes-container ul li a:hover {
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
+  transform: translateY(-3px);
+  filter: none;
+}
+
+.Facebook:hover {
+  background: var(--Facebook);
+}
+
+.Instagram:hover {
+  background: var(--Instagram);
+}
+
+.Linkedin:hover {
+  background: var(--Linkedin);
+}
+
+.Twitter:hover {
+  background: var(--Twitter);
+}
+
+.WhatsApp:hover {
+  background: var(--WhatsApp);
+}
+
+.imagen-tarjeta img {
+  border-radius: 200px;
+  height: 250px;
+  width: auto;
+  display: flex;
+}
+
+/* ------------- Encabezado trabajo ------------- */
+
+.trabajo {
+  flex-direction: column;
+  margin-bottom: 100px;
+  align-items: center;
+  margin-top: 0px;
+  display: flex;
+  padding: 20px;
+}
+
+.tarjeta {
+  background-color: rgb(236, 213, 152);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 70px;
+  padding-top: 20px;
+  font-weight: bold;
+  display: flex;
+  padding: 20px;
+}
+
+.tarjeta h2 {
+  font-family: Creepster;
+  font-weight: bolder;
+  color: black;
+  display: flex;
+  margin: 20px;
+}
+
+.tarjetas {
+  font-family: 'Shadows Into Light', cursive;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+button {
+  background-color: rgb(243, 237, 237);
+  font-family: Creepster;
+  border-radius: 10px;
+  font-size: large;
+  color: blue;
+  margin-top: 5%;
+  display: flex;
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+  color: rgb(134, 80, 80);
+}
+
+#check {
+  display: none;
+}
+
+.greeting {
+  background-color: fuchsia;
+}
+
+/* ------------- Encabezado Contacto ------------- */
+
+footer {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-header {
+  width: 100%;
+  margin: auto;
+  padding: 100px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.form-header h1 {
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  border: 0;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #bdbdbd;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  border: 0;
+  width: 100%;
+  padding: 7px;
+  resize: none;
+  font-size: 14px;
+  min-height: 200px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #bdbdbd;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+.form-row button {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 3px;
+  background-color: #5995da;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
