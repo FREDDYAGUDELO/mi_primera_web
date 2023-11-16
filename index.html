@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Creepster&family=Mountains+of+Christmas&family=Nosifer&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Mountains+of+Christmas&family=Nosifer&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c9b87a4bee.js"
+      crossorigin="anonymous"
+      src="script.js"
+    ></script>
+  </head>
+  <body>
+    <header id="encabezado">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/z.jpg" alt="imagen" width="100" height="100" />
+        </a>
+      </div>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#acerca">Acerca de mi</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="../formulario/forms.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="seccion-principal">
+      <section class="seccion-1">
+        <div class="acerca-de">
+          <h2 class="fuente-acento">Acerca de mi</h2>
+          <p class="parrafo1">
+            ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
+          </p>
+          <p class="parrafo2">
+            Me llamo FREDDY, vivo en Medellín, Colombia. Tengo 33 años. Me gusta
+            el helado y salir a pasear en días de sol. El cine, la música, la
+            pesca. También soy amante de DBZ. Me encantaría aprender a programar
+            para poder ayudar a las personas a mostrar lo que hacen. También soy
+            Enfermero con 13 años de experiencia en diversos servicios de
+            hospitalización, UCI, UCE, Vacunación, Referencia y
+            contrarreferencia, Aplicación de medicamentos de alto costo, Sistema
+            de PQRS, Cuentas de alto costo, Gestión del riesgo de pacientes con
+            enfermedades crónicas y autoinmunes. Con calidad de trabajo,
+            motivado y responsable.
+          </p>
+        </div>
+        <div class="acerca-imagen">
+          <img class="foto-perfil" src="img/broly.jpg" alt="imagen personal" />
+        </div>
+      </section>
+      <section class="seccion-2">
+        <img class="goku" src="img/goku.jpg" alt="imagen de goku" />
+      </section>
+    </main>
+    <section id="trabajo" class="trabajo">
+      <div>
+        <h2>TRABAJOS</h2>
+      </div>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <div class="imagen-tarjeta">
+            <img src="img/tarjeta1.jpg" alt="imagen tarjeta" />
+          </div>
+          <div>
+            <h2>Titulo 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              delectus iste consectetur debitis illum dolorem, minus quas earum
+              odit cupiditate, voluptates quo suscipit laborum sunt autem
+              impedit fugiat. Rerum, repellat.
+            </p>
+            <button>Saber mas</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <div class="imagen-tarjeta">
+            <img src="img/tarjeta2.jpg" alt="imagen tarjeta" />
+          </div>
+          <div>
+            <h2>Titulo 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              delectus iste consectetur debitis illum dolorem, minus quas earum
+              odit cupiditate, voluptates quo suscipit laborum sunt autem
+              impedit fugiat. Rerum, repellat.
+            </p>
+            <button>Saber mas</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <div class="imagen-tarjeta">
+            <img src="img/tarjeta3.jpg" alt="imagen tarjeta" />
+          </div>
+          <div>
+            <h2>Titulo 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              delectus iste consectetur debitis illum dolorem, minus quas earum
+              odit cupiditate, voluptates quo suscipit laborum sunt autem
+              impedit fugiat. Rerum, repellat.
+            </p>
+            <button>Saber mas</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="form-header">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+            <button>Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer id="Contacto">
+      <a href="index.html">
+        <img src="img/z.jpg" alt="imagen" />
+      </a>
+      <div class="Redes-container">
+        <h3>Redes sociales</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#" class="Facebook"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" class="Instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" class="Twitter"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" class="Linkedin"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
